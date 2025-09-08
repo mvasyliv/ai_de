@@ -30,7 +30,7 @@ class LangChainSetting(AppBaseSetting):
 
 
 class LLMSetting(AppBaseSetting):
-    """Model_config = SettingsConfigDict(env_prefix="LLM")"""
+    """Model_setting SettingsConfigDict(env_prefix='LLM')"""
     openai_model: Annotated[str, Field(description="Name model OpenAI")]
     openai_api_key: Annotated[SecretStr, Field(description="API key OpenAI")]
     temperature: Annotated[float, Field(default=0.1, description="Temperature")]
