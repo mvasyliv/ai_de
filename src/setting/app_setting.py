@@ -38,6 +38,7 @@ class LLMSetting(AppBaseSetting):
 
 
 class AppSetting(AppBaseSetting):
+    """Application settings"""
     app_name: Annotated[str, Field(
         default="Multi Agent System", description="Application name")]
     app_version: Annotated[str, Field(description="")]
